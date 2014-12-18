@@ -1,0 +1,14 @@
+style input { font-size: 18px; border: 1px solid #000; }
+
+h1 #{client.name} wants to authorize your account, do you approve?
+img(src=client.logo)
+
+form(method='post', action='')
+  input(type='hidden', name='allow' value='yes')
+  input(type='hidden', name='response_type', value='code')
+  input(type='submit', value='yes of course ＼(^-^)／!')
+
+form(method='post', action='')
+  input(type='hidden', name='allow' value='no')
+  input(type='hidden', name='response_type', value='code')
+  input(type='submit', value='no way (•̀o•́)ง')

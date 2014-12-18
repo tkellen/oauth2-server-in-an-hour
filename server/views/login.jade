@@ -1,0 +1,14 @@
+style input { font-size: 18px; border: 1px solid #000; }
+  
+h1 login to oauth provider
+form(method='post', action='/login')
+  |username: 
+  input(type='text', name='username')
+  br
+  |password: 
+  input(type='password', name='password')
+  br
+  input(type='submit', value='login')
+  input(type='hidden', name='redirect', value=redirect)
+  input(type='hidden', name='redirect_uri', value=redirect_uri)
+  input(type='hidden', name='client_id', value=client_id)
